@@ -531,6 +531,24 @@
     header h1 { font-size: 20px; }
     h2 { font-size: 18px; }
   }
+
+  /* ── EXAMPLES ── */
+  .ex-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+  .ex-item {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 18px;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .ex-item-head { display: flex; align-items: center; gap: 10px; }
+  .ex-item-icon { font-size: 20px; line-height: 1; }
+  .ex-item-title { font-size: 15px; font-weight: 800; color: var(--text); letter-spacing: -.02em; }
+  .ex-item-text  { font-size: 13px; color: var(--muted); line-height: 1.55; }
+  .ex-item-accent { background: var(--accent); border-color: var(--accent); }
+  .ex-item-accent .ex-item-title { color: var(--white); }
+  .ex-item-accent .ex-item-text  { color: rgba(255,255,255,.82); }
+  .ex-item-accent .ex-item-text strong { color: var(--white); font-weight: 700; }
 </style>
 </head>
 <body>
@@ -663,6 +681,52 @@
   </div>
 </section>
 
+<!-- ══ ПРИКЛАДИ ПРОМПТІВ ══ -->
+<section>
+  <div class="container">
+    <span class="section-label">Приклади</span>
+    <h2>Промпти для натхнення</h2>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:20px">Візьміть готовий приклад і перепишіть під свою справу чи хобі.</p>
+    <div class="ex-list">
+      <div class="ex-item">
+        <div class="ex-item-head">
+          <span class="ex-item-icon">🎂</span>
+          <p class="ex-item-title">Кондитерка</p>
+        </div>
+        <p class="ex-item-text">Зроби сайт-візитку для домашньої кондитерки «Солодкий настрій». Клієнти знаходять мене в Instagram. Секції: головний екран, «Про мене», галерея, ціни, відгуки, контакти. Стиль теплий, пастельні бежево-рожеві кольори.</p>
+      </div>
+      <div class="ex-item">
+        <div class="ex-item-head">
+          <span class="ex-item-icon">💅</span>
+          <p class="ex-item-title">Майстер манікюру</p>
+        </div>
+        <p class="ex-item-text">Зроби сайт-візитку для майстра манікюру. Приймаю вдома за записом. Секції: фото робіт, послуги з цінами, галерея, відгуки, запис через Instagram. Стиль ніжний, рожево-білі кольори.</p>
+      </div>
+      <div class="ex-item">
+        <div class="ex-item-head">
+          <span class="ex-item-icon">📸</span>
+          <p class="ex-item-title">Фотограф</p>
+        </div>
+        <p class="ex-item-text">Зроби сайт-портфоліо для фотографа. Знімаю портрети та весілля. Секції: головне фото, «Про мене», галереї по категоріях, пакети послуг, контакти. Стиль елегантний, темна тема, великі фото.</p>
+      </div>
+      <div class="ex-item">
+        <div class="ex-item-head">
+          <span class="ex-item-icon">📚</span>
+          <p class="ex-item-title">Репетитор</p>
+        </div>
+        <p class="ex-item-text">Зроби сайт-візитку для репетитора з англійської. Навчаю онлайн дітей і дорослих. Секції: «Про мене», формати занять із цінами, відгуки, запис на пробний урок. Стиль дружній, сині та зелені кольори.</p>
+      </div>
+      <div class="ex-item ex-item-accent">
+        <div class="ex-item-head">
+          <span class="ex-item-icon">✏️</span>
+          <p class="ex-item-title">Твій шаблон</p>
+        </div>
+        <p class="ex-item-text">Зроби сучасний сайт-візитку для <strong>[моя справа]</strong>. Я <strong>[що роблю і для кого]</strong>. Секції: головний екран, «Про мене», послуги / галерея, ціни, контакти. Стиль <strong>[який]</strong>, кольори <strong>[які]</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══ ДАЛІ ══ -->
 <section>
   <div class="container">
@@ -703,7 +767,7 @@
       <div class="contact-card">
         <!-- 📸 ФОТО: src="dmytro.jpg" -->
         <div class="contact-avatar" id="av-dmytro">
-          <img src=""
+          <img src="https://dvornichenko.design/images/me_real.png"
                alt="Дмитро Дворніченко"
                onload="this.parentElement.classList.add('has-photo')"
                onerror="this.parentElement.classList.remove('has-photo')" />
@@ -723,7 +787,7 @@
       <div class="contact-card">
         <!-- 📸 ФОТО: src="maksym.jpg" -->
         <div class="contact-avatar" id="av-maksym">
-          <img src=""
+          <img src="Maksym.png"
                alt="Максим Загоровський"
                onload="this.parentElement.classList.add('has-photo')"
                onerror="this.parentElement.classList.remove('has-photo')" />
@@ -736,6 +800,7 @@
             <a href="https://instagram.com/Maks.Kardinalove" target="_blank" class="contact-link">📸 @Maks.Kardinalove</a>
           </div>
         </div>
+        
       </div>
 
     </div>
